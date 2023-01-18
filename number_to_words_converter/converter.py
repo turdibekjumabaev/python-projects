@@ -18,7 +18,9 @@ def convert_number_to_words(n):
         return tens[n // 10] + ('' if n % 10 == 0 else ' ' + ones[n % 10])
     if n < 1000:
         return ones[n // 100] + ' júz' + ('' if n % 100 == 0 else ' ' + convert_number_to_words(n % 100))
+    if n < 10000:
+        return ones[n // 1000] + ' mıń' + ('' if n % 1000 == 0 else ' ' + convert_number_to_words(n % 1000))
     raise ValueError('San diapazonnan sırtta: {}'.format(n))
 
 # Funkciyanı test qılıw
-print(convert_number_to_words(10000))
+print(convert_number_to_words(1732))
