@@ -12,6 +12,9 @@ def convert_number_to_words(n):
     # onlıqlar
     tens = ["", "on", "jigirma", "otız", "qırıq", "eliw", "alpıs", "jetpiz", "seksen", "toqsan"]
 
+    # millionlar
+    millions = ["", "million", "milyard", "trillion", "kvadrillion", "kvintillion", "sekstilion", "septillion", "oktilion", "nonillion", "decillion"]
+
     if n < 10:
         return ones[n]
     if n < 100:
